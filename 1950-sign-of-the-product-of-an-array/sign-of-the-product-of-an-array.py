@@ -4,6 +4,7 @@ class Solution:
         for num in nums:
             if num == 0:
                 return 0
-            sign *= num
-        return 1 if sign > 0 else -1
+            if num < 0:
+                sign *= -1
+        return sign
         
